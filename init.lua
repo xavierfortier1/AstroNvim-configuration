@@ -16,16 +16,13 @@ return {
       --   ["remote3"] = "github_user", -- GitHub user assume AstroNvim fork
     },
   },
-
   -- Set colorscheme to use
-  colorscheme = "astrodark",
-
+  colorscheme = "oxocarbon",
   -- Diagnostics configuration (for vim.diagnostics.config({...})) when diagnostics are on
   diagnostics = {
     virtual_text = true,
     underline = true,
   },
-
   lsp = {
     -- customize lsp formatting options
     formatting = {
@@ -34,6 +31,9 @@ return {
         enabled = true, -- enable or disable format on save globally
         allow_filetypes = { -- enable format on save for specified filetypes only
           -- "go",
+          "python",
+          "lua",
+          "rust",
         },
         ignore_filetypes = { -- disable format on save for specified filetypes
           -- "python",
@@ -52,7 +52,6 @@ return {
       -- "pyright"
     },
   },
-
   -- Configure require("lazy").setup() options
   lazy = {
     defaults = { lazy = true },
@@ -63,7 +62,30 @@ return {
       },
     },
   },
-
+  highlights = {
+    init = function()
+      local get_hlgroup = require("astronvim.utils").get_hlgroup
+      local normal = get_hlgroup "Normal"
+      local fg, bg = normal.fg, normal.bg
+      local bg_alt = get_hlgroup("Visual").bg
+      local green = get_hlgroup("String").fg
+      local red = get_hlgroup("Error").fg
+      return {
+        TelescopeBorder = { fg = bg_alt, bg = bg },
+        TelescopeNormal = { bg = bg },
+        TelescopePreviewBorder = { fg = bg, bg = bg },
+        TelescopePreviewNormal = { bg = bg },
+        TelescopePreviewTitle = { fg = bg, bg = green },
+        TelescopePromptBorder = { fg = bg_alt, bg = bg_alt },
+        TelescopePromptNormal = { fg = fg, bg = bg_alt },
+        TelescopePromptPrefix = { fg = red, bg = bg_alt },
+        TelescopePromptTitle = { fg = bg, bg = red },
+        TelescopeResultsBorder = { fg = bg, bg = bg },
+        TelescopeResultsNormal = { bg = bg },
+        TelescopeResultsTitle = { fg = bg, bg = bg },
+      }
+    end,
+  },
   -- This function is run last and is a good place to configuring
   -- augroups/autocommands and custom filetypes also this just pure lua so
   -- anything that doesn't fit in the normal config locations above can go here
