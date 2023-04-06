@@ -5,28 +5,18 @@ return {
     opts = function(_, opts)
       -- customize the dashboard header
       opts.section.header.val = {
-        -- " █████  ███████ ████████ ██████   ██████",
-        -- "██   ██ ██         ██    ██   ██ ██    ██",
-        -- "███████ ███████    ██    ██████  ██    ██",
-        -- "██   ██      ██    ██    ██   ██ ██    ██",
-        -- "██   ██ ███████    ██    ██   ██  ██████",
-        -- " ",
-        -- "    ███    ██ ██    ██ ██ ███    ███",
-        -- "    ████   ██ ██    ██ ██ ████  ████",
-        -- "    ██ ██  ██ ██    ██ ██ ██ ████ ██",
-        -- "    ██  ██ ██  ██  ██  ██ ██  ██  ██",
-        -- "    ██   ████   ████   ██ ██      ██",
-        " ████████  ██      ██  ██",
-        "██      ██  ██    ██   ██",
-        "██      ██   ██  ██    ██",
-        "██      ██    ████     ██",
-        "██      ██     ██      ██",
-        "██      ██     ██        ",
-        " ████████      ██      ██",
+        " █████████  ██      ██  ██",
+        "██       ██  ██    ██   ██",
+        "██       ██   ██  ██    ██",
+        "██       ██    ████     ██",
+        "██       ██     ██      ██",
+        "██       ██     ██        ",
+        " █████████      ██      ██",
       }
       return opts
     end,
   },
+  { "mfussenegger/nvim-dap", enabled = true },
   -- You can disable default plugins as follows:
   -- { "max397574/better-escape.nvim", enabled = false },
   --
@@ -35,7 +25,7 @@ return {
   --   "L3MON4D3/LuaSnip",
   --   config = function(plugin, opts)
   --     require "plugins.configs.luasnip"(plugin, opts) -- include the default astronvim config that calls the setup call
-  --     -- add more custom luasnip configuration such as filetype extend or custom snippets
+  --     -- add core custom luasnip configuration such as filetype extend or custom snippets
   --     local luasnip = require "luasnip"
   --     luasnip.filetype_extend("javascript", { "javascriptreact" })
   --   end,
