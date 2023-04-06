@@ -17,7 +17,8 @@ return {
     },
   },
   -- Set colorscheme to use
-  colorscheme = "oxocarbon",
+  -- colorscheme = "tokyonight-night",
+  colorscheme = "carbonfox",
   -- Diagnostics configuration (for vim.diagnostics.config({...})) when diagnostics are on
   diagnostics = {
     virtual_text = true,
@@ -30,7 +31,6 @@ return {
       format_on_save = {
         enabled = true, -- enable or disable format on save globally
         allow_filetypes = { -- enable format on save for specified filetypes only
-          -- "go",
           "python",
           "lua",
           "rust",
@@ -86,6 +86,45 @@ return {
       }
     end,
   },
+
+  icons = {
+    VimIcon = "",
+    ScrollText = "",
+    GitBranch = "",
+    GitAdd = "",
+    GitChange = "",
+    GitDelete = "",
+  },
+  heirline = {
+    separators = {
+      left = { "", " " }, -- separator for the left side of the statusline
+      right = { " ", "" }, -- separator for the right side of the statusline
+      tab = { "", "" },
+    },
+    colors = function(hl)
+      local get_hlgroup = require("astronvim.utils").get_hlgroup
+      local comment_fg = get_hlgroup("Comment").fg
+      hl.git_branch_fg = comment_fg
+      hl.git_added = comment_fg
+      hl.git_changed = comment_fg
+      hl.git_removed = comment_fg
+      hl.blank_bg = get_hlgroup("Folded").fg
+      hl.file_info_bg = get_hlgroup("Visual").bg
+      hl.nav_icon_bg = get_hlgroup("String").fg
+      hl.nav_fg = hl.nav_icon_bg
+      hl.folder_icon_bg = get_hlgroup("Error").fg
+      return hl
+    end,
+    attributes = {
+      mode = { bold = true },
+    },
+    icon_highlights = {
+      file_icon = {
+        statusline = false,
+      },
+    },
+  },
+
   -- This function is run last and is a good place to configuring
   -- augroups/autocommands and custom filetypes also this just pure lua so
   -- anything that doesn't fit in the normal config locations above can go here
