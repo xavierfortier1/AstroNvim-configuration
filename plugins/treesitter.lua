@@ -5,6 +5,8 @@ return {
       "lua",
       "python",
       "rust",
+      "cpp",
+      "c",
     },
   },
 }
