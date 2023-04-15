@@ -8,5 +8,6 @@ return {
       "cpp",
       "c",
     },
+    auto_install = true,
   },
 }
