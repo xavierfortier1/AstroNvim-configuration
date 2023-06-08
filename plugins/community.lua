@@ -7,9 +7,6 @@ return {
   -- { import = "astrocommunity.completion.copilot-lua-cmp" },
 
   -- Colorscheme
-  { import = "astrocommunity.colorscheme.iceberg-vim",         enable = false },
-  { import = "astrocommunity.colorscheme.nightfox-nvim",       enable = false },
-  { import = "astrocommunity.colorscheme.mellow-nvim",         enable = true },
 
   -- Editing support
   { import = "astrocommunity.editing-support.nvim-ts-rainbow2" },
