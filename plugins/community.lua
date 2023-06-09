@@ -16,6 +16,7 @@ return {
   { import = "astrocommunity.pack.python" },
   { import = "astrocommunity.pack.lua" },
   { import = "astrocommunity.pack.rust" },
+  { import = "astrocommunity.pack.cmake" },
 
   -- Utility
   { import = "astrocommunity.utility.noice-nvim" },
