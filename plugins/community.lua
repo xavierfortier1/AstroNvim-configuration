@@ -7,7 +7,6 @@ return {
   -- Colorscheme
 
   -- Completion
-  { import = "astrocommunity.completion.copilot-lua-cmp" },
 
   --Debugging
 
