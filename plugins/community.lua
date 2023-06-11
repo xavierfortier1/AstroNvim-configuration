@@ -4,9 +4,12 @@ return {
   -- example of imporing a plugin, comment out to use it or add your own
   -- available plugins can be found at https://github.com/AstroNvim/astrocommunity
 
-  -- { import = "astrocommunity.completion.copilot-lua-cmp" },
-
   -- Colorscheme
+
+  -- Completion
+  { import = "astrocommunity.completion.copilot-lua-cmp" },
+
+  --Debugging
 
   -- Editing support
   { import = "astrocommunity.editing-support.nvim-ts-rainbow2" },
