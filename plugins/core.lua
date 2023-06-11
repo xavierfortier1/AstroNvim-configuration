@@ -16,7 +16,8 @@ return {
       return opts
     end,
   },
-  { "mfussenegger/nvim-dap", enabled = true },
+  -- { "mfussenegger/nvim-dap", enabled = true },  -- Windows only
+
   -- You can disable default plugins as follows:
   -- { "max397574/better-escape.nvim", enabled = false },
   --
