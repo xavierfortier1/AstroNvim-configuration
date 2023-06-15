@@ -20,6 +20,9 @@ return {
   { import = "astrocommunity.pack.rust" },
   { import = "astrocommunity.pack.cmake" },
 
+  -- Scrolling
+  { import = "astrocommunity.scrolling.neoscroll-nvim" },
+
   -- Utility
   { import = "astrocommunity.utility.noice-nvim" },
 }
