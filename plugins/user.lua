@@ -76,11 +76,13 @@ return {
       return opts
     end,
   },
+
+  -- Monokai pro
   {
     "loctvl842/monokai-pro.nvim",
     opts = {
       terminal_colors = true,
-      devicons = true,     -- highlight the icons of `nvim-web-devicons`
+      devicons = true, -- highlight the icons of `nvim-web-devicons`
       filter = "spectrum", -- classic | octagon | pro | machine | ristretto | spectrum
       plugins = {
         indent_blankline = {
@@ -90,6 +92,8 @@ return {
       },
     },
   },
+
+  -- Ayu
   {
     "Shatur/neovim-ayu",
     opt = {
