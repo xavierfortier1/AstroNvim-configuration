@@ -19,12 +19,16 @@ return {
           mode_text = { icon = { kind = "VimIcon", padding = { right = 1, left = 1 } } },
           surround = {
             separator = "left",
-            color = function() return { main = status.hl.mode_bg(), right = "#f7f1ff" } end,
+            -- color = function() return { main = status.hl.mode_bg(), right = "blank_bg" } end, -- original
+            -- color = function() return { main = status.hl.mode_bg(), right = "#f7f1ff" } end, -- monokai/ayu
+            color = function() return { main = status.hl.mode_bg(), right = "folder_icon_bg" } end, -- ayu
           },
         },
         status.component.builder {
           { provider = "" },
-          surround = { separator = "left", color = { main = "#f7f1ff", right = "file_info_bg" } },
+          -- surround = { separator = "left", color = { main = "blank_bg", right = "file_info_bg" } }, -- original
+          -- surround = { separator = "left", color = { main = "#f7f1ff", right = "file_info_bg" } }, -- monokai
+          surround = { separator = "left", color = { main = "folder_icon_bg", right = "file_info_bg" } }, -- ayu
         },
         status.component.file_info {
           file_icon = { padding = { left = 0 } },
@@ -76,7 +80,7 @@ return {
     "loctvl842/monokai-pro.nvim",
     opts = {
       terminal_colors = true,
-      devicons = true, -- highlight the icons of `nvim-web-devicons`
+      devicons = true,     -- highlight the icons of `nvim-web-devicons`
       filter = "spectrum", -- classic | octagon | pro | machine | ristretto | spectrum
       plugins = {
         indent_blankline = {
@@ -84,6 +88,13 @@ return {
           context_start_underline = false,
         },
       },
+    },
+  },
+  {
+    "Shatur/neovim-ayu",
+    opt = {
+      mirage = false,
+      overrides = {},
     },
   },
 }
