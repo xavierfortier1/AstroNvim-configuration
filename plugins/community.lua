@@ -15,7 +15,7 @@ return {
   { import = "astrocommunity.editing-support.refactoring-nvim" },
 
   -- mardown-and-latex
-  { import = "astrocommunity.markdown-and-latex.peek-nvim" },
+  -- { import = "astrocommunity.markdown-and-latex.peek-nvim" },
 
   -- pack
   { import = "astrocommunity.pack.python" },
@@ -26,6 +26,9 @@ return {
 
   -- scrolling
   { import = "astrocommunity.scrolling.neoscroll-nvim" },
+
+  -- syntax
+  { import = "astrocommunity.syntax.hlargs-nvim" },
 
   -- utility
   { import = "astrocommunity.utility.noice-nvim" },
