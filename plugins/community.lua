@@ -23,6 +23,7 @@ return {
   { import = "astrocommunity.pack.rust" },
   { import = "astrocommunity.pack.cmake" },
   { import = "astrocommunity.pack.markdown" },
+  { import = "astrocommunity.pack.json" },
 
   -- scrolling
   { import = "astrocommunity.scrolling.neoscroll-nvim" },
