@@ -96,9 +96,5 @@ return {
   -- Ayu
   {
     "Shatur/neovim-ayu",
-    opt = {
-      mirage = false,
-      overrides = {},
-    },
   },
 }
