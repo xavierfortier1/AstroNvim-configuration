@@ -97,4 +97,15 @@ return {
   {
     "Shatur/neovim-ayu",
   },
+
+  -- indent-blankline
+  {
+    "lukas-reineke/indent-blankline.nvim",
+    event = "User AstroFile",
+    opts = {
+      filetype_exclude = { "help", "alpha", "dashboard", "neo-tree", "Trouble", "lazy " },
+      show_trailing_blankline_indent = true,
+      show_current_context = true,
+    },
+  },
 }
