@@ -6,6 +6,9 @@ return {
 
   -- colorscheme
 
+  -- code-runner
+  { import = "astrocommunity.code-runner.compiler-nvim" },
+
   -- completion
 
   --debugging
@@ -24,6 +27,8 @@ return {
   { import = "astrocommunity.pack.cmake" },
   { import = "astrocommunity.pack.markdown" },
   { import = "astrocommunity.pack.json" },
+
+  -- motion
 
   -- scrolling
   { import = "astrocommunity.scrolling.neoscroll-nvim" },
