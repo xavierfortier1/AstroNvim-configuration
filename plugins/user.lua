@@ -82,7 +82,7 @@ return {
     "loctvl842/monokai-pro.nvim",
     opts = {
       terminal_colors = true,
-      devicons = true,     -- highlight the icons of `nvim-web-devicons`
+      devicons = true, -- highlight the icons of `nvim-web-devicons`
       filter = "spectrum", -- classic | octagon | pro | machine | ristretto | spectrum
       plugins = {
         indent_blankline = {
@@ -96,17 +96,6 @@ return {
   -- Ayu
   {
     "Shatur/neovim-ayu",
-  },
-
-  -- indent-blankline
-  {
-    "lukas-reineke/indent-blankline.nvim",
-    event = "User AstroFile",
-    opts = {
-      filetype_exclude = { "help", "alpha", "dashboard", "neo-tree", "Trouble", "lazy " },
-      show_trailing_blankline_indent = true,
-      show_current_context = true,
-    },
   },
 
   -- flash.nvim
