@@ -11,7 +11,10 @@ return {
 
   -- completion
 
-  --debugging
+  -- debugging
+
+  -- diagnostics
+  { import = "astrocommunity.diagnostics.trouble-nvim" },
 
   -- editing support
   { import = "astrocommunity.editing-support.nvim-ts-rainbow2" },
@@ -27,11 +30,16 @@ return {
   { import = "astrocommunity.pack.cmake" },
   { import = "astrocommunity.pack.markdown" },
   { import = "astrocommunity.pack.json" },
+  { import = "astrocommunity.pack.java" },
+  { import = "astrocommunity.pack.cpp" },
 
   -- motion
 
   -- scrolling
   { import = "astrocommunity.scrolling.neoscroll-nvim" },
+
+  -- split-and-window
+  { import = "astrocommunity.split-and-window.edgy-nvim" },
 
   -- syntax
   { import = "astrocommunity.syntax.hlargs-nvim" },
