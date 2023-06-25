@@ -82,7 +82,7 @@ return {
     "loctvl842/monokai-pro.nvim",
     opts = {
       terminal_colors = true,
-      devicons = true, -- highlight the icons of `nvim-web-devicons`
+      devicons = true,     -- highlight the icons of `nvim-web-devicons`
       filter = "spectrum", -- classic | octagon | pro | machine | ristretto | spectrum
       plugins = {
         indent_blankline = {
@@ -117,7 +117,7 @@ return {
     keys = {
       {
         "s",
-        moe = { "n", "x", "o" },
+        mode = { "n", "x", "o" },
         function() require("flash").jump() end,
         desc = "Flash",
       },
