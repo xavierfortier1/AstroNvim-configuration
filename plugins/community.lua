@@ -19,6 +19,8 @@ return {
   -- editing support
   { import = "astrocommunity.editing-support.nvim-ts-rainbow2" },
   { import = "astrocommunity.editing-support.refactoring-nvim" },
+  { import = "astrocommunity.editing-support.vim-move" },
+  { import = "astrocommunity.editing-support.ultimate-autopair-nvim" },
 
   -- mardown-and-latex
   -- { import = "astrocommunity.markdown-and-latex.peek-nvim" },
