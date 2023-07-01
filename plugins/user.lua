@@ -78,20 +78,20 @@ return {
   },
 
   -- Monokai pro
-  {
-    "loctvl842/monokai-pro.nvim",
-    opts = {
-      terminal_colors = true,
-      devicons = true, -- highlight the icons of `nvim-web-devicons`
-      filter = "spectrum", -- classic | octagon | pro | machine | ristretto | spectrum
-      plugins = {
-        indent_blankline = {
-          context_highlight = "pro", -- default | pro
-          context_start_underline = false,
-        },
-      },
-    },
-  },
+  -- {
+  --   "loctvl842/monokai-pro.nvim",
+  --   opts = {
+  --     terminal_colors = true,
+  --     devicons = true, -- highlight the icons of `nvim-web-devicons`
+  --     filter = "spectrum", -- classic | octagon | pro | machine | ristretto | spectrum
+  --     plugins = {
+  --       indent_blankline = {
+  --         context_highlight = "pro", -- default | pro
+  --         context_start_underline = false,
+  --       },
+  --     },
+  --   },
+  -- },
 
   -- Ayu
   {
@@ -121,6 +121,17 @@ return {
         mode = "o",
         function() require("flash").remote() end,
         desc = "Remote Flash",
+      },
+    },
+  },
+
+  -- auto-save.nvim
+  {
+    "Pocco81/auto-save.nvim",
+    event = { "User AstroFile", "InsertEnter" },
+    opts = {
+      execution_message = {
+        message = "",
       },
     },
   },
