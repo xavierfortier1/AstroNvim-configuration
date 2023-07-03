@@ -1,6 +1,9 @@
 return {
   "AstroNvim/astrocommunity",
 
+  -- NOTE: color
+  { import = "astrocommunity.color.ccc-nvim" },
+
   -- NOTE: colorscheme
 
   -- NOTE: code-runner
@@ -23,7 +26,10 @@ return {
   },
   { import = "astrocommunity.editing-support.vim-move" },
   { import = "astrocommunity.editing-support.ultimate-autopair-nvim" },
-  -- { import = "astrocommunity.editing-support.chatgpt-nvim" },
+  { import = "astrocommunity.editing-support.chatgpt-nvim" },
+
+  -- NOTE: git
+  { import = "astrocommunity.git.neogit" },
 
   -- NOTE: markdown-and-latex
   -- { import = "astrocommunity.markdown-and-latex.peek-nvim" },
