@@ -3,6 +3,15 @@ return {
 
   -- NOTE: color
   { import = "astrocommunity.color.ccc-nvim" },
+  {
+    "uga-rosa/ccc.nvim",
+    keys = {
+      {
+        "<leader>z",
+        desc = "ccc",
+      },
+    },
+  },
 
   -- NOTE: colorscheme
 
@@ -27,6 +36,39 @@ return {
   { import = "astrocommunity.editing-support.vim-move" },
   { import = "astrocommunity.editing-support.ultimate-autopair-nvim" },
   { import = "astrocommunity.editing-support.chatgpt-nvim" },
+  {
+    "jackMort/ChatGPT.nvim",
+    keys = {
+      {
+        "<leader>G",
+        desc = "ChatGPT",
+      },
+      {
+        "<leader>Gg",
+        ":ChatGPT<CR>",
+        desc = "ChatGPT",
+        silent = true,
+      },
+      {
+        "<leader>Ga",
+        ":ChatGPTActAs<CR>",
+        desc = "Act As",
+        silent = true,
+      },
+      {
+        "<leader>Ge",
+        ":ChatGPTEditWithInstructions<CR>",
+        desc = "Edit With Instructions",
+        silent = true,
+      },
+      {
+        "<leader>Gr",
+        ":ChatGPTRun<CR>",
+        desc = "Run",
+        silent = true,
+      },
+    },
+  },
 
   -- NOTE: git
   { import = "astrocommunity.git.neogit" },
