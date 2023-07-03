@@ -1,14 +1,45 @@
 return {
+  -- NOTE: todo-comments.nvim
   {
     "folke/todo-comments.nvim",
-    dependencies = "nvim-lua/plenary.nvim",
-    opts = {},
     event = "User AstroFile",
-    cmd = { "TodoQuickFix" },
-    keys = {},
+    dependencies = { "nvim-lua/plenary.nvim" },
+    cmd = { "TodoQuickFix", "TodoLocList", "TodoTrouble", "TodoTelescope" },
+    opts = {},
+    keys = {
+      {
+        "<leader>T",
+        desc = "Todo comments",
+      },
+      {
+        "<leader>Tq",
+        ":TodoQuickFix<CR>",
+        desc = "Quick Fix",
+        silent = true,
+      },
+      {
+        "<leader>Tl",
+        ":TodoLocList<CR>",
+        desc = "Location list",
+        silent = true,
+      },
+      {
+        "<leader>TT",
+        ":TodoTrouble<CR>",
+        desc = "Trouble",
+        silent = true,
+      },
+      {
+        "<leader>Tt",
+        ":TodoTelescope<CR>",
+        desc = "Telescope",
+        silent = true,
+      },
+      name = "Todo",
+    },
   },
 
-  -- NvChad StatusLine
+  -- NOTE: NvChad StatusLine
   {
     "rebelot/heirline.nvim",
     opts = function(_, opts)
@@ -58,7 +89,7 @@ return {
             surround = { separator = "none", color = "file_info_bg", condition = false },
           },
         },
-        { -- make nav section with icon border
+        {
           status.component.builder {
             { provider = require("astronvim.utils").get_icon "ScrollText" },
             padding = { right = 1 },
@@ -77,7 +108,7 @@ return {
     end,
   },
 
-  -- Monokai pro
+  -- NOTE: monokai-pro.nvim
   -- {
   --   "loctvl842/monokai-pro.nvim",
   --   opts = {
@@ -93,12 +124,12 @@ return {
   --   },
   -- },
 
-  -- Ayu
+  -- NOTE: neovim-ayu
   {
     "Shatur/neovim-ayu",
   },
 
-  -- flash.nvim
+  -- NOTE: flash.nvim
   {
     "folke/flash.nvim",
     event = "VeryLazy",
@@ -125,14 +156,40 @@ return {
     },
   },
 
-  -- auto-save.nvim
+  -- NOTE: auto-save.nvim
   {
     "Pocco81/auto-save.nvim",
     event = { "User AstroFile", "InsertEnter" },
     opts = {
       execution_message = {
         message = "",
+        cleaning_interval = 0,
       },
+    },
+    keys = {
+      {
+        "<leader>s",
+        ":ASToggle<CR>",
+        desc = "Toggle Auto Save",
+        silent = true,
+      },
+    },
+  },
+
+  -- NOTE: suda.vim
+  {
+    "lambdalisue/suda.vim",
+    keys = {
+      {
+        "<leader>W",
+        ":SudaWrite<CR>",
+        desc = "Suda Write",
+        silent = true,
+      },
+    },
+    cmd = {
+      "SudaRead",
+      "SudaWrite",
     },
   },
 }
