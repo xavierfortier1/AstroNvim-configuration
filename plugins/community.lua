@@ -1,31 +1,34 @@
 return {
-  -- Add the community repository of plugin specifications
   "AstroNvim/astrocommunity",
-  -- example of imporing a plugin, comment out to use it or add your own
-  -- available plugins can be found at https://github.com/AstroNvim/astrocommunity
 
-  -- colorscheme
+  -- NOTE: colorscheme
 
-  -- code-runner
+  -- NOTE: code-runner
   { import = "astrocommunity.code-runner.compiler-nvim" },
 
-  -- completion
-
-  -- debugging
-
-  -- diagnostics
+  -- NOTE: diagnostics
   { import = "astrocommunity.diagnostics.trouble-nvim" },
 
-  -- editing support
+  -- NOTE: editing support
   { import = "astrocommunity.editing-support.nvim-ts-rainbow2" },
   { import = "astrocommunity.editing-support.refactoring-nvim" },
+  {
+    "ThePrimeagen/refactoring.nvim",
+    keys = {
+      {
+        "<leader>r",
+        desc = "Refactor",
+      },
+    },
+  },
   { import = "astrocommunity.editing-support.vim-move" },
   { import = "astrocommunity.editing-support.ultimate-autopair-nvim" },
+  -- { import = "astrocommunity.editing-support.chatgpt-nvim" },
 
-  -- mardown-and-latex
+  -- NOTE: markdown-and-latex
   -- { import = "astrocommunity.markdown-and-latex.peek-nvim" },
 
-  -- pack
+  -- NOTE: pack
   { import = "astrocommunity.pack.python" },
   { import = "astrocommunity.pack.lua" },
   { import = "astrocommunity.pack.rust" },
@@ -35,17 +38,17 @@ return {
   { import = "astrocommunity.pack.java" },
   { import = "astrocommunity.pack.cpp" },
 
-  -- motion
+  -- NOTE: motion
 
-  -- scrolling
+  -- NOTE: scrolling
   { import = "astrocommunity.scrolling.neoscroll-nvim" },
 
-  -- split-and-window
+  -- NOTE: split-and-window
   { import = "astrocommunity.split-and-window.edgy-nvim" },
 
-  -- syntax
+  -- NOTE: syntax
   { import = "astrocommunity.syntax.hlargs-nvim" },
 
-  -- utility
+  -- NOTE: utility
   { import = "astrocommunity.utility.noice-nvim" },
 }
