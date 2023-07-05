@@ -22,7 +22,7 @@ return {
   { import = "astrocommunity.diagnostics.trouble-nvim" },
 
   -- NOTE: editing support
-  { import = "astrocommunity.editing-support.nvim-ts-rainbow2" },
+  { import = "astrocommunity.editing-support.rainbow-delimiters-nvim" },
   { import = "astrocommunity.editing-support.refactoring-nvim" },
   {
     "ThePrimeagen/refactoring.nvim",
