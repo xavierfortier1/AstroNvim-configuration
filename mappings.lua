@@ -20,6 +20,11 @@ return {
     -- tables with the `name` key will be registered with which-key if it's installed
     -- this is useful for naming menus
     ["<leader>b"] = { name = "Buffers" },
+    ["<leader>T"] = { name = "Todo Comments" },
+    ["<leader>G"] = { name = "ChatGPT" },
+    ["<leader>r"] = { name = "Refactor" },
+    ["<leader>z"] = { name = "ccc" },
+
     -- Open Alpha automatically when no more buffers
     ["<leader>c"] = {
       function()

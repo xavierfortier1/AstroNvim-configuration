@@ -3,15 +3,6 @@ return {
 
   -- NOTE: color
   { import = "astrocommunity.color.ccc-nvim" },
-  {
-    "uga-rosa/ccc.nvim",
-    keys = {
-      {
-        "<leader>z",
-        desc = "ccc",
-      },
-    },
-  },
 
   -- NOTE: colorscheme
 
@@ -21,28 +12,15 @@ return {
   -- NOTE: diagnostics
   { import = "astrocommunity.diagnostics.trouble-nvim" },
 
-  -- NOTE: editing support
+  -- NOTE: editing-support
   { import = "astrocommunity.editing-support.rainbow-delimiters-nvim" },
   { import = "astrocommunity.editing-support.refactoring-nvim" },
-  {
-    "ThePrimeagen/refactoring.nvim",
-    keys = {
-      {
-        "<leader>r",
-        desc = "Refactor",
-      },
-    },
-  },
   { import = "astrocommunity.editing-support.vim-move" },
   { import = "astrocommunity.editing-support.ultimate-autopair-nvim" },
   { import = "astrocommunity.editing-support.chatgpt-nvim" },
   {
     "jackMort/ChatGPT.nvim",
     keys = {
-      {
-        "<leader>G",
-        desc = "ChatGPT",
-      },
       {
         "<leader>Gg",
         ":ChatGPT<CR>",

@@ -8,10 +8,6 @@ return {
     opts = {},
     keys = {
       {
-        "<leader>T",
-        desc = "Todo comments",
-      },
-      {
         "<leader>Tq",
         ":TodoQuickFix<CR>",
         desc = "Quick Fix",
@@ -35,7 +31,6 @@ return {
         desc = "Telescope",
         silent = true,
       },
-      name = "Todo",
     },
   },
 
