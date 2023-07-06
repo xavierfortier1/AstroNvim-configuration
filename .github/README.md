@@ -32,3 +32,13 @@ nvim
 ```
 
 [lazy.nvim](https://github.com/folke/lazy.nvim) should be the first thing that shows up and installed all the packages from [AstroNvim](https://github.com/AstroNvim/AstroNvim) and this configuration.
+
+### Packages
+
+#### AstroNvim Community
+
+Plugins that are imported from the [AstroNvim Commununity repository](https://github.com/AstroNvim/astrocommunity/tree/main/lua/astrocommunity) are available [here](https://github.com/Xav-1/AstroNvim-configuration/blob/master/plugins/community.lua).
+
+#### User
+
+Plugins that are configured by the user are available [here](https://github.com/Xav-1/AstroNvim-configuration/blob/master/plugins/user.lua).
