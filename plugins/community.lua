@@ -1,6 +1,18 @@
 return {
   "AstroNvim/astrocommunity",
 
+  -- NOTE: debugging
+  { import = "astrocommunity.debugging.telescope-dap-nvim" },
+  {
+    "nvim-telescope/telescope-dap.nvim",
+    keys = {
+      {
+        "<leader>fd",
+        desc = "debugging",
+      },
+    },
+  },
+
   -- NOTE: color
   { import = "astrocommunity.color.ccc-nvim" },
 
@@ -17,6 +29,7 @@ return {
   { import = "astrocommunity.editing-support.refactoring-nvim" },
   { import = "astrocommunity.editing-support.vim-move" },
   { import = "astrocommunity.editing-support.ultimate-autopair-nvim" },
+  { import = "astrocommunity.editing-support.neogen" },
   { import = "astrocommunity.editing-support.chatgpt-nvim" },
   {
     "jackMort/ChatGPT.nvim",
@@ -50,6 +63,15 @@ return {
 
   -- NOTE: git
   { import = "astrocommunity.git.neogit" },
+  {
+    "NeogitOrg/neogit",
+    keys = {
+      {
+        "<leader>gn",
+        desc = "Neogit",
+      },
+    },
+  },
 
   -- NOTE: markdown-and-latex
   -- { import = "astrocommunity.markdown-and-latex.peek-nvim" },
