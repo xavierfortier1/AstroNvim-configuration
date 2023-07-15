@@ -1,6 +1,9 @@
 return {
   "AstroNvim/astrocommunity",
 
+  -- NOTE: bars-and-lines
+  { import = "astrocommunity.bars-and-lines.vim-illuminate" },
+
   -- NOTE: debugging
   { import = "astrocommunity.debugging.telescope-dap-nvim" },
   {
