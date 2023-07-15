@@ -31,7 +31,7 @@ git clone https://github.com/Xav-1/Astronvim-configuration ~/.config/nvim/lua/us
 nvim
 ```
 
-[lazy.nvim](https://github.com/folke/lazy.nvim) should be the first thing that shows up and installed all the packages from [AstroNvim](https://github.com/AstroNvim/AstroNvim) and this configuration.
+[lazy.nvim](https://github.com/folke/lazy.nvim) should be the first thing that shows up and should install all the packages from [AstroNvim](https://github.com/AstroNvim/AstroNvim) and this configuration.
 
 ### Packages
 
