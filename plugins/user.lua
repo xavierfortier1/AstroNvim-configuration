@@ -151,26 +151,6 @@ return {
     },
   },
 
-  -- NOTE: auto-save.nvim
-  {
-    "Pocco81/auto-save.nvim",
-    event = { "User AstroFile", "InsertEnter" },
-    opts = {
-      execution_message = {
-        message = "",
-        cleaning_interval = 0,
-      },
-    },
-    keys = {
-      {
-        "<leader>s",
-        ":ASToggle<CR>",
-        desc = "Toggle Auto Save",
-        silent = true,
-      },
-    },
-  },
-
   -- NOTE: suda.vim
   {
     "lambdalisue/suda.vim",
