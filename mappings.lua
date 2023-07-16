@@ -24,6 +24,7 @@ return {
     ["<leader>G"] = { name = "ChatGPT" },
     ["<leader>r"] = { name = "Refactor" },
     ["<leader>z"] = { name = "ccc" },
+    ["<leader>m"] = { name = "Markdown" },
 
     -- Open Alpha automatically when no more buffers
     ["<leader>c"] = {
