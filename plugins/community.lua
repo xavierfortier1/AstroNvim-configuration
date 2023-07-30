@@ -33,6 +33,7 @@ return {
   { import = "astrocommunity.editing-support.vim-move" },
   { import = "astrocommunity.editing-support.ultimate-autopair-nvim" },
   { import = "astrocommunity.editing-support.neogen" },
+  { import = "astrocommunity.editing-support.yanky-nvim" },
   { import = "astrocommunity.editing-support.chatgpt-nvim" },
   {
     "jackMort/ChatGPT.nvim",
