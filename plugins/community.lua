@@ -113,6 +113,7 @@ return {
   { import = "astrocommunity.pack.json" },
   { import = "astrocommunity.pack.java" },
   { import = "astrocommunity.pack.cpp" },
+  { import = "astrocommunity.pack.yaml" },
 
   -- NOTE: motion
 
