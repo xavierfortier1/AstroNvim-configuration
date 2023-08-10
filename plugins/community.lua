@@ -114,6 +114,7 @@ return {
   { import = "astrocommunity.pack.java" },
   { import = "astrocommunity.pack.cpp" },
   { import = "astrocommunity.pack.yaml" },
+  { import = "astrocommunity.pack.kotlin" },
 
   -- NOTE: motion
 
