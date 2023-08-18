@@ -66,6 +66,7 @@ return {
   },
 
   -- NOTE: git
+  { import = "astrocommunity.git.git-blame-nvim" },
   { import = "astrocommunity.git.neogit" },
   {
     "NeogitOrg/neogit",
