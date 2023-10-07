@@ -56,6 +56,15 @@ return {
           },
         },
       },
+      matlab_ls = {
+        cmd = { "octave", "--server" },
+        filetypes = { "octave", "matlab" },
+      },
+      clangd = {
+        capabilities = {
+          offsetEncoding = "utf-8",
+        },
+      },
     },
   },
   -- Configure require("lazy").setup() options
