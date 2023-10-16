@@ -78,6 +78,9 @@ return {
     },
   },
 
+  -- NOTE: indent
+  { import = "astrocommunity.indent.indent-blankline-nvim" },
+
   -- NOTE: markdown-and-latex
   -- { import = "astrocommunity.markdown-and-latex.peek-nvim" },
   { import = "astrocommunity.markdown-and-latex.markdown-preview-nvim" },
