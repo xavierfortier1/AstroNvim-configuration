@@ -82,31 +82,7 @@ return {
   { import = "astrocommunity.indent.indent-blankline-nvim" },
 
   -- NOTE: markdown-and-latex
-  -- { import = "astrocommunity.markdown-and-latex.peek-nvim" },
-  { import = "astrocommunity.markdown-and-latex.markdown-preview-nvim" },
-  {
-    "iamcco/markdown-preview.nvim",
-    keys = {
-      {
-        "<leader>mp",
-        ":MarkdownPreview<CR>",
-        desc = "Preview",
-        silent = true,
-      },
-      {
-        "<leader>ms",
-        ":MarkdownPreviewStop<CR>",
-        desc = "Stop",
-        silent = true,
-      },
-      {
-        "<leader>mt",
-        ":MarkdownPreviewToggle<CR>",
-        desc = "Toggle",
-        silent = true,
-      },
-    },
-  },
+  { import = "astrocommunity.markdown-and-latex.peek-nvim" },
 
   -- NOTE: pack
   { import = "astrocommunity.pack.python" },
