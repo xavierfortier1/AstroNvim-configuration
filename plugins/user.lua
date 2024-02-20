@@ -45,16 +45,16 @@ return {
           mode_text = { icon = { kind = "VimIcon", padding = { right = 1, left = 1 } } },
           surround = {
             separator = "left",
-            -- color = function() return { main = status.hl.mode_bg(), right = "blank_bg" } end, -- original
+            color = function() return { main = status.hl.mode_bg(), right = "blank_bg" } end, -- original
             -- color = function() return { main = status.hl.mode_bg(), right = "#f7f1ff" } end, -- monokai/ayu
-            color = function() return { main = status.hl.mode_bg(), right = "folder_icon_bg" } end, -- ayu
+            -- color = function() return { main = status.hl.mode_bg(), right = "folder_icon_bg" } end, -- ayu
           },
         },
         status.component.builder {
           { provider = "" },
-          -- surround = { separator = "left", color = { main = "blank_bg", right = "file_info_bg" } }, -- original
+          surround = { separator = "left", color = { main = "blank_bg", right = "file_info_bg" } }, -- original
           -- surround = { separator = "left", color = { main = "#f7f1ff", right = "file_info_bg" } }, -- monokai
-          surround = { separator = "left", color = { main = "folder_icon_bg", right = "file_info_bg" } }, -- ayu
+          -- surround = { separator = "left", color = { main = "folder_icon_bg", right = "file_info_bg" } }, -- ayu
         },
         status.component.file_info {
           file_icon = { padding = { left = 0 } },
@@ -149,6 +149,14 @@ return {
         desc = "Remote Flash",
       },
     },
+  },
+
+  -- NOTE: tokyonight.nvim
+  {
+    "folke/tokyonight.nvim",
+    lazy = false,
+    priority = 1000,
+    opts = {},
   },
 
   -- NOTE: suda.vim
