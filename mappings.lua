@@ -21,7 +21,6 @@ return {
     -- this is useful for naming menus
     ["<leader>b"] = { name = "Buffers" },
     ["<leader>T"] = { name = "Todo Comments" },
-    ["<leader>G"] = { name = "ChatGPT" },
     ["<leader>r"] = { name = "Refactor" },
     ["<leader>z"] = { name = "ccc" },
     ["<leader>m"] = { name = "Markdown" },

@@ -34,36 +34,6 @@ return {
   { import = "astrocommunity.editing-support.ultimate-autopair-nvim" },
   { import = "astrocommunity.editing-support.neogen" },
   { import = "astrocommunity.editing-support.yanky-nvim" },
-  { import = "astrocommunity.editing-support.chatgpt-nvim" },
-  {
-    "jackMort/ChatGPT.nvim",
-    keys = {
-      {
-        "<leader>Gg",
-        ":ChatGPT<CR>",
-        desc = "ChatGPT",
-        silent = true,
-      },
-      {
-        "<leader>Ga",
-        ":ChatGPTActAs<CR>",
-        desc = "Act As",
-        silent = true,
-      },
-      {
-        "<leader>Ge",
-        ":ChatGPTEditWithInstructions<CR>",
-        desc = "Edit With Instructions",
-        silent = true,
-      },
-      {
-        "<leader>Gr",
-        ":ChatGPTRun<CR>",
-        desc = "Run",
-        silent = true,
-      },
-    },
-  },
 
   -- NOTE: git
   { import = "astrocommunity.git.git-blame-nvim" },
@@ -78,9 +48,6 @@ return {
     },
   },
 
-  -- NOTE: indent
-  { import = "astrocommunity.indent.indent-blankline-nvim" },
-
   -- NOTE: markdown-and-latex
   { import = "astrocommunity.markdown-and-latex.peek-nvim" },
 
@@ -91,8 +58,8 @@ return {
   { import = "astrocommunity.pack.cmake" },
   { import = "astrocommunity.pack.markdown" },
   { import = "astrocommunity.pack.json" },
-  { import = "astrocommunity.pack.java" },
   { import = "astrocommunity.pack.cpp" },
+  { import = "astrocommunity.pack.bash" },
 
   -- NOTE: motion
 
