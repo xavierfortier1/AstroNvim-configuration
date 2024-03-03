@@ -22,7 +22,8 @@ return {
   -- NOTE: colorscheme
 
   -- NOTE: code-runner
-  { import = "astrocommunity.code-runner.compiler-nvim" },
+  -- { import = "astrocommunity.code-runner.compiler-nvim" },
+  { import = "astrocommunity.code-runner.overseer-nvim" },
 
   -- NOTE: diagnostics
   { import = "astrocommunity.diagnostics.trouble-nvim" },
@@ -37,16 +38,9 @@ return {
 
   -- NOTE: git
   { import = "astrocommunity.git.git-blame-nvim" },
-  { import = "astrocommunity.git.neogit" },
-  {
-    "NeogitOrg/neogit",
-    keys = {
-      {
-        "<leader>gn",
-        desc = "Neogit",
-      },
-    },
-  },
+
+  -- NOTE: lsp
+  { import = "astrocommunity.lsp.garbage-day-nvim" },
 
   -- NOTE: markdown-and-latex
   { import = "astrocommunity.markdown-and-latex.peek-nvim" },
@@ -67,11 +61,11 @@ return {
   { import = "astrocommunity.scrolling.neoscroll-nvim" },
 
   -- NOTE: split-and-window
-  { import = "astrocommunity.split-and-window.edgy-nvim" },
+  -- { import = "astrocommunity.split-and-window.edgy-nvim" },
 
   -- NOTE: syntax
   { import = "astrocommunity.syntax.hlargs-nvim" },
 
   -- NOTE: utility
-  { import = "astrocommunity.utility.noice-nvim" },
+  -- { import = "astrocommunity.utility.noice-nvim" },
 }
