@@ -19,11 +19,20 @@ return {
   -- NOTE: color
   { import = "astrocommunity.color.ccc-nvim" },
 
-  -- NOTE: colorscheme
-
   -- NOTE: code-runner
   -- { import = "astrocommunity.code-runner.compiler-nvim" },
   { import = "astrocommunity.code-runner.overseer-nvim" },
+  {
+    "stevearc/overseer.nvim",
+    keys = {
+      {
+        "<leader>Or",
+        ":OverseerRun<CR>",
+        desc = "Run",
+        silent = true
+      },
+    }
+  },
 
   -- NOTE: diagnostics
   { import = "astrocommunity.diagnostics.trouble-nvim" },
@@ -35,6 +44,7 @@ return {
   { import = "astrocommunity.editing-support.ultimate-autopair-nvim" },
   { import = "astrocommunity.editing-support.neogen" },
   { import = "astrocommunity.editing-support.yanky-nvim" },
+  { import = "astrocommunity.editing-support.suda-vim" },
 
   -- NOTE: git
   { import = "astrocommunity.git.git-blame-nvim" },
@@ -44,6 +54,23 @@ return {
 
   -- NOTE: markdown-and-latex
   { import = "astrocommunity.markdown-and-latex.peek-nvim" },
+  {
+    "toppair/peek.nvim",
+    keys = {
+      {
+        "<leader>mo",
+        ":PeekOpen<CR>",
+        desc = "Open preview",
+        silent = true
+      },
+      {
+        "<leader>mc",
+        ":PeekClose<CR>",
+        desc = "Close preview",
+        silent = true
+      },
+    }
+  },
 
   -- NOTE: pack
   { import = "astrocommunity.pack.python" },
