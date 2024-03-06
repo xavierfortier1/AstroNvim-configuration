@@ -74,20 +74,4 @@ return {
     opts = {},
   },
 
-  -- NOTE: suda.vim
-  {
-    "lambdalisue/suda.vim",
-    keys = {
-      {
-        "<leader>W",
-        ":SudaWrite<CR>",
-        desc = "Suda Write",
-        silent = true,
-      },
-    },
-    cmd = {
-      "SudaRead",
-      "SudaWrite",
-    },
-  },
 }
