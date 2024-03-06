@@ -25,6 +25,7 @@ return {
     ["<leader>z"] = { name = "ccc" },
     ["<leader>m"] = { name = "Markdown" },
     ["<leader>O"] = { name = "Overseer" },
+    ["<leader>fd"] = { name = "DAP" },
 
     -- Open Alpha automatically when no more buffers
     ["<leader>c"] = {

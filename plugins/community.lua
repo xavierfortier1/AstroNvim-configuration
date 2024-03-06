@@ -6,18 +6,6 @@ return {
 
   -- NOTE: debugging
   { import = "astrocommunity.debugging.telescope-dap-nvim" },
-  {
-    "nvim-telescope/telescope-dap.nvim",
-    keys = {
-      {
-        "<leader>fd",
-        desc = "debugging",
-      },
-    },
-  },
-
-  -- NOTE: color
-  { import = "astrocommunity.color.ccc-nvim" },
 
   -- NOTE: code-runner
   -- { import = "astrocommunity.code-runner.compiler-nvim" },
