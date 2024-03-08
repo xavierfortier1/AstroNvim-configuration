@@ -14,6 +14,7 @@ return {
     smartindent = true,
     expandtab = true,
     ttyfast = true,
+    colorcolumn = "80",
   },
   g = {
     mapleader = " ", -- sets vim.g.mapleader
