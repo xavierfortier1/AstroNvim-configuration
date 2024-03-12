@@ -17,6 +17,8 @@ return {
     end,
   },
 
+  { "nvim-neo-tree/neo-tree.nvim", enabled = false },
+
   -- { "mfussenegger/nvim-dap", enabled = true },  -- Windows only
 
   -- You can disable default plugins as follows:
