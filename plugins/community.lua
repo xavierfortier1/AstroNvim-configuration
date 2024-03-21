@@ -32,7 +32,6 @@ return {
   -- NOTE: editing-support
   { import = "astrocommunity.editing-support.rainbow-delimiters-nvim" },
   { import = "astrocommunity.editing-support.refactoring-nvim" },
-  { import = "astrocommunity.editing-support.vim-move" },
   { import = "astrocommunity.editing-support.ultimate-autopair-nvim" },
   { import = "astrocommunity.editing-support.neogen" },
   { import = "astrocommunity.editing-support.yanky-nvim" },
@@ -63,6 +62,10 @@ return {
       },
     },
   },
+
+  -- NOTE: motion
+  { import = "astrocommunity.motion.mini-move" },
+  { import = "astrocommunity.motion.grapple-nvim" },
 
   -- NOTE: pack
   { import = "astrocommunity.pack.python-ruff" },
