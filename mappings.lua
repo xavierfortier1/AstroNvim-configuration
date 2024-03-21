@@ -22,7 +22,6 @@ return {
     ["<leader>b"] = { name = "Buffers" },
     ["<leader>T"] = { name = "Todo Comments" },
     ["<leader>r"] = { name = "Refactor" },
-    ["<leader>z"] = { name = "ccc" },
     ["<leader>m"] = { name = "Markdown" },
     ["<leader>O"] = { name = "Overseer" },
     ["<leader>fd"] = { name = "DAP" },

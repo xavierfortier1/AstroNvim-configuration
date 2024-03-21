@@ -17,10 +17,14 @@ return {
         "<leader>Or",
         ":OverseerRun<CR>",
         desc = "Run",
-        silent = true
+        silent = true,
       },
-    }
+    },
   },
+
+  -- NOTE: completion
+  -- { import = "astrocommunity.completion.tabnine-nvim" },
+  { import = "astrocommunity.completion.codeium-vim" },
 
   -- NOTE: diagnostics
   { import = "astrocommunity.diagnostics.trouble-nvim" },
@@ -49,19 +53,19 @@ return {
         "<leader>mo",
         ":PeekOpen<CR>",
         desc = "Open preview",
-        silent = true
+        silent = true,
       },
       {
         "<leader>mc",
         ":PeekClose<CR>",
         desc = "Close preview",
-        silent = true
+        silent = true,
       },
-    }
+    },
   },
 
   -- NOTE: pack
-  { import = "astrocommunity.pack.python" },
+  { import = "astrocommunity.pack.python-ruff" },
   { import = "astrocommunity.pack.lua" },
   { import = "astrocommunity.pack.rust" },
   { import = "astrocommunity.pack.cmake" },
@@ -70,17 +74,12 @@ return {
   { import = "astrocommunity.pack.cpp" },
   { import = "astrocommunity.pack.bash" },
 
-  -- NOTE: motion
+  -- NOTE: startup
+  { import = "astrocommunity.startup.fsplash-nvim" },
 
   -- NOTE: scrolling
   { import = "astrocommunity.scrolling.neoscroll-nvim" },
 
-  -- NOTE: split-and-window
-  -- { import = "astrocommunity.split-and-window.edgy-nvim" },
-
   -- NOTE: syntax
   { import = "astrocommunity.syntax.hlargs-nvim" },
-
-  -- NOTE: utility
-  -- { import = "astrocommunity.utility.noice-nvim" },
 }

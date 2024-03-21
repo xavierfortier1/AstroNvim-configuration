@@ -82,8 +82,11 @@ return {
     enabled = true,
     cmd = "Oil",
     keys = {
-      { "<leader>o", function() require("oil").open() end, desc = "Open folder in Oil" },
+      {
+        "<leader>o",
+        function() require("oil").open() end,
+        desc = "Open Oil",
+      },
     },
-  }
-
+  },
 }
