@@ -30,7 +30,6 @@ return {
   { import = "astrocommunity.diagnostics.trouble-nvim" },
 
   -- NOTE: editing-support
-  { import = "astrocommunity.editing-support.rainbow-delimiters-nvim" },
   { import = "astrocommunity.editing-support.refactoring-nvim" },
   { import = "astrocommunity.editing-support.ultimate-autopair-nvim" },
   { import = "astrocommunity.editing-support.neogen" },

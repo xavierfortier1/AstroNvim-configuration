@@ -17,8 +17,7 @@ return {
     },
   },
   -- Set colorscheme to use
-  -- colorscheme = "ayu-dark",
-  colorscheme = "tokyonight-night",
+  colorscheme = "rose-pine",
 
   diagnostics = {
     virtual_text = true,

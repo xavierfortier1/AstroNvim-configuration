@@ -34,11 +34,6 @@ return {
     },
   },
 
-  -- NOTE: neovim-ayu
-  {
-    "Shatur/neovim-ayu",
-  },
-
   -- NOTE: flash.nvim
   {
     "folke/flash.nvim",
@@ -66,14 +61,6 @@ return {
     },
   },
 
-  -- NOTE: tokyonight.nvim
-  {
-    "folke/tokyonight.nvim",
-    lazy = false,
-    priority = 1000,
-    opts = {},
-  },
-
   -- NOTE: oil.nvim
   {
     "stevearc/oil.nvim",
@@ -88,5 +75,12 @@ return {
         desc = "Open Oil",
       },
     },
+  },
+
+  -- NOTE: rose-pine
+  {
+    "rose-pine/neovim",
+    name = "rose-pine",
+    opts = {},
   },
 }
