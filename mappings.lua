@@ -25,6 +25,7 @@ return {
     ["<leader>m"] = { name = "Markdown" },
     ["<leader>O"] = { name = "Overseer" },
     ["<leader>fd"] = { name = "DAP" },
+    ["<leader><leader>"] = { name = "\u{1F588} Bufpin" },
 
     -- Open Alpha automatically when no more buffers
     ["<leader>c"] = {

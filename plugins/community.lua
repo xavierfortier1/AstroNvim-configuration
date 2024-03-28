@@ -64,7 +64,7 @@ return {
 
   -- NOTE: motion
   { import = "astrocommunity.motion.mini-move" },
-  { import = "astrocommunity.motion.grapple-nvim" },
+  -- { import = "astrocommunity.motion.grapple-nvim" },
 
   -- NOTE: pack
   { import = "astrocommunity.pack.python-ruff" },
