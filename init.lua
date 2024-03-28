@@ -24,27 +24,13 @@ return {
     underline = true,
   },
   lsp = {
-    -- customize lsp formatting options
     formatting = {
-      -- control auto formatting on save
       format_on_save = {
-        enabled = true, -- enable or disable format on save globally
-        -- allow_filetypes = {  -- enable format on save for specified filetypes only
-        -- },
-        -- ignore_filetypes = { -- disable format on save for specified filetypes
-        -- },
+        enabled = true,
       },
-      -- disabled = { -- disable formatting capabilities for the listed language servers
-      -- },
-      timeout_ms = 1000, -- default format timeout
-      -- filter = function(client) -- fully override the default formatting function
-      --   return true
-      -- end
+      timeout_ms = 1000,
     },
-    -- enable servers that you already have installed without mason
-    servers = {
-      -- "pyright"
-    },
+    servers = {},
     config = {
       rust_analyzer = {
         settings = {
@@ -53,12 +39,13 @@ return {
               extraEnv = { CARGO_PROFILE_RUST_ANALYZER_INHERITS = "dev" },
               extraArgs = { "--profile", "rust-analyzer" },
             },
+            checkOnSave = {
+              allFeatures = true,
+              command = "clippy",
+              extraArgs = { "--no-deps" },
+            },
           },
         },
-      },
-      matlab_ls = {
-        cmd = { "octave", "--server" },
-        filetypes = { "octave", "matlab" },
       },
       clangd = {
         capabilities = {
